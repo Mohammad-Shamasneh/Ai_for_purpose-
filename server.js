@@ -161,14 +161,12 @@ app.get("/", (req, res) => {
         <button class="btn danger" id="clear">حذف الكل (محلي)</button>
       </div>
     </div>
-    <div class="muted">هنا رح تشوف كل تسجيلات SOS مع تشغيل الصوت + النص + التصنيف.</div>
   </div>
 </header>
 
 <div class="wrap">
   <div id="list" class="grid"></div>
   <div id="empty" class="empty" style="display:none">لا يوجد بلاغات بعد.</div>
-  <p class="small">ملاحظة: التخزين في Render (الخطة المجانية) ممكن يروح بعد Restart. للمنتج الحقيقي استخدم Storage خارجي.</p>
 </div>
 
 <script>
@@ -291,3 +289,4 @@ app.post("/api/clear", (req, res) => {
 // ✅ Render PORT
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("Server running on port", PORT));
+
